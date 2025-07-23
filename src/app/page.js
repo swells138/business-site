@@ -1,5 +1,6 @@
 // Template: Rust Belt-Inspired Web Services Site — Moody + Cool Look
-import Image from "next/image";
+import Image from "next/image"
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#1c1c1e] to-[#2f2f31] text-zinc-100 px-4 sm:px-8 py-16 space-y-24 font-sans">
@@ -11,6 +12,8 @@ export default function Home() {
         <Image
           src="https://sdmntpreastus2.oaiusercontent.com/files/00000000-cb90-61f6-b252-5cc6023009ab/raw?se=2025-07-23T03%3A59%3A02Z&sp=r&sv=2024-08-04&sr=b&scid=b9553a3d-645d-5911-a673-6a0a7697bfa9&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-22T23%3A10%3A12Z&ske=2025-07-23T23%3A10%3A12Z&sks=b&skv=2024-08-04&sig=5d4Vf%2B/l%2BG4m79hHoMKjTbH55C0RLGcM4SjYgt0%2B81Y%3D"
           alt="Rust Belt theme"
+          width={1200}
+          height={800}
           className="w-full max-w-3xl mx-auto rounded-xl shadow-2xl border border-zinc-700 object-cover"
           style={{ maxHeight: "500px" }}
         />
@@ -27,6 +30,8 @@ export default function Home() {
         <Image
           src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-5904-61fd-8a2e-6a0b21d43f4e/raw?se=2025-07-23T04%3A04%3A34Z&sp=r&sv=2024-08-04&sr=b&scid=1f9a1dc4-9119-5e4f-bbdc-aedf97d6b71a&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-22T23%3A10%3A19Z&ske=2025-07-23T23%3A10%3A19Z&sks=b&skv=2024-08-04&sig=R508uNRHC/5MhVXngQh2Y5nXju5EWoFjK89Ijjwo/Ho%3D"
           alt="moody coding setup"
+          width={1200}
+          height={800}
           className="w-full object-cover rounded-xl shadow-xl border border-zinc-700"
           style={{ maxHeight: "500px" }}
         />
