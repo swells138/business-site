@@ -1,103 +1,93 @@
-import Image from "next/image";
-
+// Template: Rust Belt-Inspired Web Services Site — Moody + Cool Look
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <main className="min-h-screen bg-gradient-to-b from-[#1c1c1e] to-[#2f2f31] text-zinc-100 px-4 sm:px-8 py-16 space-y-24 font-sans">
+      <section className="text-center space-y-4">
+        <h1 className="text-5xl font-extrabold text-amber-400 tracking-tight drop-shadow">Northeast Web Studio</h1>
+        <p className="text-lg text-zinc-300 max-w-xl mx-auto">
+          Web design forged in the Rust Belt. Clean. Fast. Built to last.
+        </p>
+        <img
+          src="https://sdmntpreastus2.oaiusercontent.com/files/00000000-cb90-61f6-b252-5cc6023009ab/raw?se=2025-07-23T03%3A59%3A02Z&sp=r&sv=2024-08-04&sr=b&scid=b9553a3d-645d-5911-a673-6a0a7697bfa9&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-22T23%3A10%3A12Z&ske=2025-07-23T23%3A10%3A12Z&sks=b&skv=2024-08-04&sig=5d4Vf%2B/l%2BG4m79hHoMKjTbH55C0RLGcM4SjYgt0%2B81Y%3D"
+          alt="Rust Belt theme"
+          className="w-full max-w-3xl mx-auto rounded-xl shadow-2xl border border-zinc-700 object-cover"
+          style={{ maxHeight: '500px' }}
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold text-amber-400">About</h2>
+          <p className="text-zinc-300">
+            I'm a Navy veteran turned web dev based in Northeast Ohio. I build legit sites for local businesses
+            that want to stand out online. Everything I make is sharp, mobile-friendly, and just works.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <img
+          src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-5904-61fd-8a2e-6a0b21d43f4e/raw?se=2025-07-23T04%3A04%3A34Z&sp=r&sv=2024-08-04&sr=b&scid=1f9a1dc4-9119-5e4f-bbdc-aedf97d6b71a&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-22T23%3A10%3A19Z&ske=2025-07-23T23%3A10%3A19Z&sks=b&skv=2024-08-04&sig=R508uNRHC/5MhVXngQh2Y5nXju5EWoFjK89Ijjwo/Ho%3D"
+          alt="moody coding setup"
+          className="w-full object-cover rounded-xl shadow-xl border border-zinc-700"
+              style={{ maxHeight: '500px' }}
+        />
+      </section>
+
+      <section className="text-center">
+        <h2 className="text-3xl font-bold text-amber-400 mb-10">Services</h2>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <li className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="text-xl font-semibold text-amber-300">Landing Pages</h3>
+            <p className="text-sm text-zinc-400 mt-2">One-page sites that make an impact fast.</p>
+          </li>
+          <li className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="text-xl font-semibold text-amber-300">Multi-Page Sites</h3>
+            <p className="text-sm text-zinc-400 mt-2">The full package: Home, Services, About, Contact — all polished.</p>
+          </li>
+          <li className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 className="text-xl font-semibold text-amber-300">Fixes & Tweaks</h3>
+            <p className="text-sm text-zinc-400 mt-2">Make your current site faster, sharper, and less broken.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section className="bg-zinc-900 rounded-xl p-8 text-center space-y-4 shadow-inner border border-zinc-700">
+        <h2 className="text-3xl font-bold text-amber-400">Contact</h2>
+        <p className="text-lg text-zinc-300">Want a website or have a question? Let’s talk.</p>
+        <p>Email: <a href="mailto:sydney.wells@gmail.com" className="text-amber-300 underline">sydney.wells@gmail.com</a></p>
+        <p className="text-zinc-400">Based in Northeast Ohio and proud to serve small businesses in the Cleveland area.</p>
+      </section>
+
+      <section className="text-center space-y-6">
+        <h2 className="text-3xl font-bold text-amber-400">Website Care Plans</h2>
+        <p className="max-w-xl mx-auto text-zinc-300">
+          Keep your site running tight. Choose a care plan and never worry about tech headaches.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow">
+            <h3 className="text-xl font-semibold text-amber-300">Basic - $25/mo</h3>
+            <ul className="mt-4 space-y-2 text-sm text-zinc-400">
+              <li>✔ Monthly edits</li>
+              <li>✔ Security checks</li>
+              <li>✔ Software updates</li>
+            </ul>
+          </div>
+          <div className="bg-zinc-800 border-2 border-amber-400 p-6 rounded-xl shadow-lg">
+            <h3 className="text-xl font-semibold text-amber-400">Pro - $50/mo</h3>
+            <ul className="mt-4 space-y-2 text-sm text-zinc-300">
+              <li>✔ Weekly updates</li>
+              <li>✔ Backups + SEO boosts</li>
+              <li>✔ Priority support</li>
+            </ul>
+          </div>
+          <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow">
+            <h3 className="text-xl font-semibold text-amber-300">Full - $75/mo</h3>
+            <ul className="mt-4 space-y-2 text-sm text-zinc-400">
+              <li>✔ Unlimited edits</li>
+              <li>✔ Analytics + uptime monitoring</li>
+              <li>✔ Monthly strategy call</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
