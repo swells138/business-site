@@ -57,7 +57,7 @@ export default function Home() {
 
       <section className="bg-zinc-900 rounded-xl p-8 text-center space-y-4 shadow-inner border border-zinc-700">
         <h2 className="text-3xl font-bold text-amber-400">Contact</h2>
-        <p className="text-lg text-zinc-300">Want a website or have a question? Lets talk.</p>
+        <p className="text-lg text-zinc-300">Want a website or have a question? Let&apos;s</p>
         <p>Email: <a href="mailto:sydneywells103@gmail.com" className="text-amber-300 underline">sydneywells103@gmail.com</a></p>
         <p className="text-zinc-400">Based in Northeast Ohio and proud to serve small businesses in the Cleveland area.</p>
       </section>
