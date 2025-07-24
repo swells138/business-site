@@ -7,24 +7,24 @@ import Link from 'next/link';
 
 const sites = [
   {
-    title: 'Food Trucks',
+    title: 'Food Truck',
     href: '/samples/site1',
-    snippet: 'A clean landing page design for a cozy coffee shop.',
+    snippet: 'A flavorful landing page for a mobile kitchen.',
   },
   {
     title: 'Pop-up Shop',
     href: '/samples/site2',
-    snippet: 'Modern portfolio layout showcasing projects and services.',
+    snippet: 'Quick-hit retail presence for short-term shops.',
   },
   {
-    title: 'Photography',
+    title: 'Photography Portfolio',
     href: '/samples/site3',
-    snippet: 'Simple blog homepage with inviting typography.',
+    snippet: 'Clean gallery layout to highlight your work.',
   },
   {
-    title: 'Custom',
+    title: 'Dog Grooming',
     href: '/samples/site4',
-    snippet: 'Event landing page featuring a strong call to action.',
+    snippet: 'Bright design for pet care services.',
   },
 ];
 
