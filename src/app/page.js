@@ -1,7 +1,35 @@
+'use client';
 // Template: Rust Belt-Inspired Web Services Site — Moody + Cool Look
-import Image from "next/image"
+import { useState } from 'react';
+import Image from "next/image";
 
 export default function Home() {
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    try {
+      const res = await fetch('/api/message', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setStatus('Message sent!');
+        setForm({ name: '', email: '', message: '' });
+      } else {
+        setStatus('Failed to send.');
+      }
+    } catch {
+      setStatus('Failed to send.');
+    }
+  };
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#1c1c1e] to-[#2f2f31] text-zinc-100 px-4 sm:px-8 py-16 space-y-24 font-sans">
       <section className="text-center space-y-4">
@@ -94,6 +122,48 @@ export default function Home() {
             </ul>
           </div>
         </div>
+      </section>
+
+      <section className="max-w-xl mx-auto bg-zinc-900 border border-zinc-700 rounded-xl p-6 space-y-4 shadow">
+        <h2 className="text-3xl font-bold text-amber-400 text-center">Send a Message</h2>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder="Your name"
+            required
+            className="w-full p-2 rounded bg-zinc-800 border border-zinc-700"
+          />
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="Email"
+            required
+            className="w-full p-2 rounded bg-zinc-800 border border-zinc-700"
+          />
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            placeholder="Message"
+            rows="4"
+            required
+            className="w-full p-2 rounded bg-zinc-800 border border-zinc-700"
+          />
+          <button
+            type="submit"
+            className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-4 rounded w-full"
+          >
+            Send
+          </button>
+          {status && (
+            <p className="text-sm text-center text-amber-300">{status}</p>
+          )}
+        </form>
       </section>
     </main>
   );
