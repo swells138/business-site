@@ -4,27 +4,32 @@ export const metadata = {
 };
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const sites = [
   {
     title: 'Food Trucks',
     href: 'https://foodtruck-site.vercel.app',
     snippet: 'A clean landing page design for a cozy coffee shop.',
+    image: '/images/foodtruck.png', // Add your image path here
   },
   {
     title: 'Pop-up Shop',
     href: 'https://popupshop-site.vercel.app/',
     snippet: 'Modern portfolio layout showcasing projects and services.',
+    image: '/images/pop-up.png',
   },
   {
     title: 'Photography',
     href: 'https://photography-site-brown.vercel.app/',
     snippet: 'Simple blog homepage with inviting typography.',
+    image: '/images/photography.png',
   },
   {
     title: 'Custom',
     href: '/samples/site4',
     snippet: 'Event landing page featuring a strong call to action.',
+    image: '',
   },
 ];
 
@@ -35,6 +40,13 @@ export default function SamplesPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {sites.map((site) => (
           <div key={site.href} className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl space-y-3 shadow">
+            <Image
+              src={site.image}
+              alt={`${site.title} preview`}
+              width={600}
+              height={400}
+              className="rounded-lg mb-3 w-full object-cover"
+            />
             <h2 className="text-2xl font-semibold text-amber-300">{site.title}</h2>
             <p className="text-zinc-300">{site.snippet}</p>
             <Link href={site.href} className="text-amber-400 underline">Visit Site</Link>
