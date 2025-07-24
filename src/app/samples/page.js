@@ -7,22 +7,22 @@ import Link from 'next/link';
 
 const sites = [
   {
-    title: 'Sample Site One',
+    title: 'Food Trucks',
     href: '/samples/site1',
     snippet: 'A clean landing page design for a cozy coffee shop.',
   },
   {
-    title: 'Sample Site Two',
+    title: 'Pop-up Shop',
     href: '/samples/site2',
     snippet: 'Modern portfolio layout showcasing projects and services.',
   },
   {
-    title: 'Sample Site Three',
+    title: 'Photography',
     href: '/samples/site3',
     snippet: 'Simple blog homepage with inviting typography.',
   },
   {
-    title: 'Sample Site Four',
+    title: 'Custom',
     href: '/samples/site4',
     snippet: 'Event landing page featuring a strong call to action.',
   },
