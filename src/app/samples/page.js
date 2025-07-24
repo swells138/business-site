@@ -8,17 +8,17 @@ import Link from 'next/link';
 const sites = [
   {
     title: 'Food Trucks',
-    href: '/samples/site1',
+    href: 'https://foodtruck-site.vercel.app',
     snippet: 'A clean landing page design for a cozy coffee shop.',
   },
   {
     title: 'Pop-up Shop',
-    href: '/samples/site2',
+    href: 'https://popupshop-site.vercel.app/',
     snippet: 'Modern portfolio layout showcasing projects and services.',
   },
   {
     title: 'Photography',
-    href: '/samples/site3',
+    href: 'https://photography-site-brown.vercel.app/',
     snippet: 'Simple blog homepage with inviting typography.',
   },
   {
