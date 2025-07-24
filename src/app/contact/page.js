@@ -2,11 +2,6 @@
 
 import { useState } from 'react';
 
-export const metadata = {
-  title: 'Contact - Northeast Web Studio',
-  description: 'Get in touch with Northeast Web Studio',
-};
-
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
