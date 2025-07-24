@@ -83,6 +83,39 @@ export default function Home() {
         </ul>
       </section>
 
+      <section className="text-center space-y-6">
+        <h2 className="text-3xl font-bold text-amber-400">Website Care Plans</h2>
+        <p className="max-w-xl mx-auto text-zinc-300">
+          Keep your site running tight. Choose a care plan and never worry about tech headaches.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow">
+            <h3 className="text-xl font-semibold text-amber-300">Basic - $25/mo</h3>
+            <ul className="mt-4 space-y-2 text-sm text-zinc-400">
+              <li>✔ Monthly edits</li>
+              <li>✔ Security checks</li>
+              <li>✔ Software updates</li>
+            </ul>
+          </div>
+          <div className="bg-zinc-800 border-2 border-amber-400 p-6 rounded-xl shadow-lg">
+            <h3 className="text-xl font-semibold text-amber-400">Pro - $50/mo</h3>
+            <ul className="mt-4 space-y-2 text-sm text-zinc-300">
+              <li>✔ Weekly updates</li>
+              <li>✔ Backups + SEO boosts</li>
+              <li>✔ Priority support</li>
+            </ul>
+          </div>
+          <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow">
+            <h3 className="text-xl font-semibold text-amber-300">Full - $75/mo</h3>
+            <ul className="mt-4 space-y-2 text-sm text-zinc-400">
+              <li>✔ Unlimited edits</li>
+              <li>✔ Analytics + uptime monitoring</li>
+              <li>✔ Monthly strategy call</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-xl mx-auto bg-zinc-900 rounded-xl p-8 text-center space-y-4 shadow-inner border border-zinc-700">
         <h2 className="text-3xl font-bold text-amber-400">Contact</h2>
         <p className="text-lg text-zinc-300">Want a website or have a question? Let&apos;s talk.</p>
@@ -129,39 +162,6 @@ export default function Home() {
             <p className="text-sm text-center text-amber-300">{status}</p>
           )}
         </form>
-      </section>
-
-      <section className="text-center space-y-6">
-        <h2 className="text-3xl font-bold text-amber-400">Website Care Plans</h2>
-        <p className="max-w-xl mx-auto text-zinc-300">
-          Keep your site running tight. Choose a care plan and never worry about tech headaches.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow">
-            <h3 className="text-xl font-semibold text-amber-300">Basic - $25/mo</h3>
-            <ul className="mt-4 space-y-2 text-sm text-zinc-400">
-              <li>✔ Monthly edits</li>
-              <li>✔ Security checks</li>
-              <li>✔ Software updates</li>
-            </ul>
-          </div>
-          <div className="bg-zinc-800 border-2 border-amber-400 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-semibold text-amber-400">Pro - $50/mo</h3>
-            <ul className="mt-4 space-y-2 text-sm text-zinc-300">
-              <li>✔ Weekly updates</li>
-              <li>✔ Backups + SEO boosts</li>
-              <li>✔ Priority support</li>
-            </ul>
-          </div>
-          <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-xl shadow">
-            <h3 className="text-xl font-semibold text-amber-300">Full - $75/mo</h3>
-            <ul className="mt-4 space-y-2 text-sm text-zinc-400">
-              <li>✔ Unlimited edits</li>
-              <li>✔ Analytics + uptime monitoring</li>
-              <li>✔ Monthly strategy call</li>
-            </ul>
-          </div>
-        </div>
       </section>
 
     </main>
