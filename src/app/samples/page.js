@@ -17,13 +17,13 @@ const sites = [
     title: 'Pop-up Shop',
     href: 'https://popupshop-site.vercel.app/',
     snippet: 'Modern portfolio layout showcasing projects and services.',
-    image: '/images/pop-up.png',
+    image: '/images/Pop-up.png',
   },
   {
     title: 'Photography',
     href: 'https://photography-site-brown.vercel.app/',
     snippet: 'Simple blog homepage with inviting typography.',
-    image: '/images/photography.png',
+    image: '/images/Photography.png',
   },
   {
     title: 'Custom',
