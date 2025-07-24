@@ -1,11 +1,11 @@
 "use client";
 
+import { useState } from 'react';
+
 export const metadata = {
   title: 'Contact - Northeast Web Studio',
   description: 'Get in touch with Northeast Web Studio',
 };
-
-import { useState } from 'react';
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
