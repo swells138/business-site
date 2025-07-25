@@ -31,7 +31,7 @@ export default function Home() {
     }
   };
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#1c1c1e] to-[#2f2f31] text-zinc-100 px-4 sm:px-8 py-16 space-y-24 font-sans">
+    <main className="min-h-screen bg-gradient-to-b from-[#1c1c1e] to-[#2f2f31] text-zinc-100 px-4 sm:px-8 py-12 space-y-16 font-sans">
       <section className="text-center space-y-4">
         <h1 className="text-5xl font-extrabold text-amber-400 tracking-tight drop-shadow">Northeast Web Studio</h1>
         <p className="text-lg text-zinc-300 max-w-xl mx-auto">
@@ -43,7 +43,7 @@ export default function Home() {
           width={1200}
           height={800}
           className="w-full max-w-3xl mx-auto rounded-xl shadow-2xl border border-zinc-700 object-cover"
-          style={{ maxHeight: "500px" }}
+          style={{ maxHeight: "400px" }}
         />
       </section>
 
@@ -61,7 +61,7 @@ export default function Home() {
           width={1200}
           height={800}
           className="w-full object-cover rounded-xl shadow-xl border border-zinc-700"
-          style={{ maxHeight: "500px" }}
+          style={{ maxHeight: "400px" }}
         />
       </section>
 
