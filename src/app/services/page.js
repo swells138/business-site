@@ -53,7 +53,7 @@ export default function ServicesPage() {
             <thead>
               <tr className="bg-zinc-800">
                 <th className="p-3 border border-zinc-700">Plan</th>
-                <th className="p-3 border border-zinc-700">What's Included</th>
+                <th className="p-3 border border-zinc-700">What&apos;s Included</th>
                 <th className="p-3 border border-zinc-700">Price</th>
               </tr>
             </thead>
