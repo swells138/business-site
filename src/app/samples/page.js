@@ -27,9 +27,9 @@ const sites = [
   },
   {
     title: 'Custom',
-    href: '/samples/site4',
+    href: 'https://oddjobs-site.vercel.app/',
     snippet: 'Event landing page featuring a strong call to action.',
-    image: '',
+    image: '/images/oddjobs.png',
   },
 ];
 
