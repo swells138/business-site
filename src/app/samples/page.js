@@ -49,7 +49,14 @@ export default function SamplesPage() {
             />
             <h2 className="text-2xl font-semibold text-amber-300">{site.title}</h2>
             <p className="text-zinc-300">{site.snippet}</p>
-            <Link href={site.href} className="text-amber-400 underline">Visit Site</Link>
+            <Link
+              href={site.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 underline"
+            >
+              Visit Site
+            </Link>
           </div>
         ))}
       </div>
