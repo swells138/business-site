@@ -9,6 +9,9 @@ export default function Navbar() {
       <Link href="/about" className="hover:text-amber-300">
         About
       </Link>
+      <Link href="/services" className="hover:text-amber-300">
+        Services
+      </Link>
       <Link href="/samples" className="hover:text-amber-300">
         Samples
       </Link>
