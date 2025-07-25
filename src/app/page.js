@@ -15,11 +15,17 @@ export default function Home() {
     e.preventDefault();
     setStatus('Sending...');
     try {
-      const res = await fetch('/api/message', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
+      const res = await fetch(
+        'https://formsubmit.co/ajax/sydneywells103@gmail.com',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify(form),
+        }
+      );
       if (res.ok) {
         setStatus('Message sent!');
         setForm({ name: '', email: '', message: '' });
