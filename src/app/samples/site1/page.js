@@ -1,5 +1,6 @@
 export const metadata = {
   title: 'Sample Site 1 - Northeast Web Studio',
+  description: 'Example landing page layout for a food truck business.',
 };
 
 import Link from 'next/link';

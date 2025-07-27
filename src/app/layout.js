@@ -13,8 +13,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "NEast Web Studio",
+  metadataBase: new URL("https://neastwebstudio.com"),
+  title: {
+    default: "Northeast Web Studio",
+    template: "%s | Northeast Web Studio",
+  },
   description: "Northeast Ohio Web Studio - Crafting Beautiful Websites",
+  openGraph: {
+    title: "Northeast Web Studio",
+    description: "Northeast Ohio Web Studio - Crafting Beautiful Websites",
+    url: "https://neastwebstudio.com/",
+    siteName: "Northeast Web Studio",
+    images: [
+      {
+        url: "/images/rustbelt.png",
+        width: 1200,
+        height: 800,
+        alt: "Northeast Web Studio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Northeast Web Studio",
+    description: "Northeast Ohio Web Studio - Crafting Beautiful Websites",
+    images: ["/images/rustbelt.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
