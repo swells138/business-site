@@ -81,6 +81,9 @@ export default function ServicesPage() {
           <li><strong>Rush Fee – +20–30%</strong><br/>Need your site live ASAP? I offer expedited timelines with priority scheduling.</li>
         </ul>
       </section>
+      <section className="max-w-3xl mx-auto text-center text-sm text-zinc-400">
+        <p>Northeast Web Studio is not a registered LLC. All services are provided by Sydney Wells, operating as a sole proprietor.</p>
+      </section>
     </main>
   );
 }
