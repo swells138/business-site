@@ -1,5 +1,6 @@
 export const metadata = {
   title: 'Sample Site 2 - Northeast Web Studio',
+  description: 'Modern portfolio-style design for a pop-up shop or small business.',
 };
 
 import Link from 'next/link';

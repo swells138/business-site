@@ -1,5 +1,6 @@
 export const metadata = {
   title: 'Sample Site 4 - Northeast Web Studio',
+  description: 'Event landing page demo with bold call to action.',
 };
 
 import Link from 'next/link';
