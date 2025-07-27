@@ -11,10 +11,10 @@ export default function AboutPage() {
       <section className="text-center space-y-6">
         <h1 className="text-5xl font-extrabold text-amber-400 drop-shadow">About Us</h1>
         <p className="text-lg text-zinc-300 max-w-2xl mx-auto">
-          Northeast Web Studio is proudly based in Ohio, serving Cleveland and beyond. My name is Sydney, and I’m a Navy veteran, animal lover, and passionate builder—whether it’s websites, furniture, or home renovations.
+          Northeast Web Studio is proudly based in Ohio, serving Cleveland and beyond. My name is Sydney, and I’m a Navy veteran, dog/cat lover, and passionate builder—whether it’s websites, furniture, or home renovations.
         </p>
         <Image
-          src="https://images.unsplash.com/photo-1520374751173-3a56e1f1b898?auto=format&fit=crop&w=1200&q=80"
+          src="/images/rustbelt.png"
           alt="Working on a project"
           width={1200}
           height={800}
