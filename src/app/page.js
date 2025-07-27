@@ -137,6 +137,10 @@ export default function Home() {
         </form>
       </section>
 
+      <p className="text-xs text-zinc-500 text-center pt-8">
+        Northeast Web Studio is a trade name of Sydney Wells, sole proprietor.
+      </p>
+
     </main>
   );
 }
