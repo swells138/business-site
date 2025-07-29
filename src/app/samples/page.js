@@ -13,6 +13,12 @@ const sites = [
     snippet: 'A clean landing page design for a food truck.',
     image: '/images/foodtruck.png', // Add your image path here
   },
+   {
+    title: 'Pet Salon',
+    href: 'https://dogwash-site.vercel.app/',
+    snippet: 'Modern portfolio layout showcasing projects.',
+    image: '/images/dogwash.png',
+  },
   {
     title: 'Pop-up Shop',
     href: 'https://popupshop-site.vercel.app/',
