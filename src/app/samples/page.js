@@ -10,19 +10,19 @@ const sites = [
   {
     title: 'Food Trucks',
     href: 'https://foodtruck-site.vercel.app',
-    snippet: 'A clean landing page design for a cozy coffee shop.',
+    snippet: 'A clean landing page design for a food truck.',
     image: '/images/foodtruck.png', // Add your image path here
   },
   {
     title: 'Pop-up Shop',
     href: 'https://popupshop-site.vercel.app/',
-    snippet: 'Modern portfolio layout showcasing projects and services.',
+    snippet: 'Modern portfolio layout showcasing projects.',
     image: '/images/Pop-up.png',
   },
   {
     title: 'Photography',
     href: 'https://photography-site-brown.vercel.app/',
-    snippet: 'Simple blog homepage with inviting typography.',
+    snippet: 'Simple photography blog homepage with inviting typography.',
     image: '/images/Photography.png',
   },
     {
