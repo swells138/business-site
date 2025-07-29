@@ -25,6 +25,12 @@ const sites = [
     snippet: 'Simple blog homepage with inviting typography.',
     image: '/images/Photography.png',
   },
+    {
+    title: 'Tattoo Shop',
+    href: 'https://tattoo-site.vercel.app/',
+    snippet: 'Edgy multi-page layout for local tattoo artists.',
+    image: '/images/tattoo.png',
+  },
   {
     title: 'Custom',
     href: 'https://oddjobs-site.vercel.app/',
