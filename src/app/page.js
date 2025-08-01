@@ -47,6 +47,9 @@ export default function Home() {
           <p className="text-lg md:text-xl text-zinc-300 max-w-md">
             Web design forged in the Rust Belt. Clean. Fast. Built to last.
           </p>
+          <p className="text-lg md:text-xl text-zinc-300 max-w-md">
+            Affordable, mobile-friendly websites for local businesses. Get online fast—with a site that works as hard as you do.
+          </p>
         </div>
         <Image
           src="/images/building (1).png"
