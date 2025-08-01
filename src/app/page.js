@@ -91,13 +91,20 @@ export default function Home() {
       <section className="space-y-6 max-w-3xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-amber-400 drop-shadow">Services</h2>
         <p className="text-zinc-300">
-          From simple landing pages to multi-page sites, I build fast and reliable websites and offer ongoing maintenance.
+          From single-page sites for food trucks to multi-page websites for boutiques, contractors, and local shops—I build clean, fast, and mobile-friendly websites that make your business look professional.
         </p>
-        <p>
-          <Link href="/services" className="text-amber-300 underline">
-            View full service details
-          </Link>
-        </p>
+        <ul className="space-y-1 text-zinc-300">
+          <li>✅ Starter sites from $300</li>
+          <li>✅ Multi-page sites from $800</li>
+          <li>✅ Mobile-friendly + basic SEO</li>
+          <li>✅ Live in under 2 weeks</li>
+        </ul>
+        <Link
+          href="/services"
+          className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-4 rounded"
+        >
+          View Full Service Details
+        </Link>
       </section>
 
       <section className="max-w-6xl mx-auto text-center space-y-6">
