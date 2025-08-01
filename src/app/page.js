@@ -3,10 +3,12 @@
 import { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { sampleSites } from "../data/sampleSites";
 
 export default function Home() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
+  const previewSites = sampleSites.slice(0, 3);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -94,6 +96,30 @@ export default function Home() {
         <p>
           <Link href="/services" className="text-amber-300 underline">
             View full service details
+          </Link>
+        </p>
+      </section>
+
+      <section className="max-w-6xl mx-auto text-center space-y-6">
+        <h2 className="text-4xl font-bold text-amber-400 drop-shadow">Samples</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {previewSites.map((site) => (
+            <div key={site.href} className="bg-zinc-800 border border-zinc-700 rounded-xl p-4 space-y-2 shadow">
+              <Image
+                src={site.image}
+                alt={`${site.title} preview`}
+                width={400}
+                height={250}
+                className="rounded-lg w-full object-cover"
+              />
+              <h3 className="text-xl font-semibold text-amber-300">{site.title}</h3>
+              <p className="text-zinc-300 text-sm">{site.snippet}</p>
+            </div>
+          ))}
+        </div>
+        <p>
+          <Link href="/samples" className="text-amber-300 underline">
+            View all sample sites
           </Link>
         </p>
       </section>
