@@ -50,6 +50,12 @@ export default function Home() {
           <p className="text-lg md:text-xl text-zinc-300 max-w-md">
             Affordable, mobile-friendly websites for local businesses. Get online fast—with a site that works as hard as you do.
           </p>
+          <p className="text-lg md:text-xl text-zinc-300 max-w-md">
+            Perfect for: Food trucks, boutiques, contractors, and local shops.
+          </p>
+          <p className="text-lg md:text-xl text-zinc-300 max-w-md">
+            I handle everything—domain, design, hosting—so you can focus on running your business.
+          </p>
         </div>
         <Image
           src="/images/building (1).png"
