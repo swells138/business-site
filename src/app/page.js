@@ -49,7 +49,7 @@ export default function Home() {
           </p>
         </div>
         <Image
-          src="/images/building(1).png"
+          src="/images/building (1).png"
           alt="Rust Belt theme"
           width={1200}
           height={800}
@@ -61,7 +61,7 @@ export default function Home() {
 
       <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center bg-zinc-900/40 rounded-xl p-8">
         <Image
-          src="/images/building(2).png"
+          src="/images/building (2).png"
           alt="moody coding setup"
           width={1200}
           height={800}
