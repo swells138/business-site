@@ -43,25 +43,28 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-[#1c1c1e] to-[#2f2f31] text-zinc-100 px-4 sm:px-8 py-12 space-y-16 font-sans">
       <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 text-center md:text-left order-last md:order-first">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-amber-400 tracking-tight drop-shadow">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-amber-400 drop-shadow">
             Northeast Web Studio
           </h1>
-          <p className="text-lg md:text-xl text-zinc-300 max-w-md">
-            Web design forged in the Rust Belt. Clean. Fast. Built to last.
+          <p className="text-lg md:text-xl text-zinc-300 max-w-md mx-auto md:mx-0">
+            Clean, fast websites built in the Rust Belt.
           </p>
-          <p className="text-lg md:text-xl text-zinc-300 max-w-md">
-            Affordable, mobile-friendly websites for local businesses. Get online fast—with a site that works as hard as you do.
-          </p>
-          <p className="text-lg md:text-xl text-zinc-300 max-w-md">
-            Perfect for: Food trucks, boutiques, contractors, and local shops.
-          </p>
-          <p className="text-lg md:text-xl text-zinc-300 max-w-md">
-            I handle everything—domain, design, hosting—so you can focus on running your business.
-          </p>
+          <ul className="text-zinc-300 space-y-1 md:list-disc md:pl-6 text-left md:text-left max-w-md mx-auto md:mx-0">
+            <li>🍔 Food trucks</li>
+            <li>🛍️ Boutiques</li>
+            <li>🔨 Contractors</li>
+            <li>🏪 Local shops</li>
+          </ul>
+          <Link
+            href="/contact"
+            className="inline-block bg-yellow-400 hover:bg-orange-500 text-black font-bold py-2 px-4 rounded"
+          >
+            Get a Free Quote
+          </Link>
         </div>
         <Image
-          src="/images/building (1).png"
-          alt="Rust Belt theme"
+          src="/images/foodtruck.png"
+          alt="Website demo"
           width={1200}
           height={800}
           priority
@@ -101,7 +104,7 @@ export default function Home() {
         </ul>
         <Link
           href="/services"
-          className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-4 rounded"
+          className="inline-block bg-yellow-400 hover:bg-orange-500 text-black font-bold py-2 px-4 rounded"
         >
           View Full Service Details
         </Link>
@@ -169,7 +172,7 @@ export default function Home() {
           />
           <button
             type="submit"
-            className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-4 rounded w-full"
+            className="bg-yellow-400 hover:bg-orange-500 text-black font-bold py-2 px-4 rounded w-full"
           >
             Send
           </button>
