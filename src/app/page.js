@@ -73,24 +73,6 @@ export default function Home() {
         />
       </section>
 
-      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center bg-zinc-900/40 rounded-xl p-8">
-        <Image
-          src="/images/building (2).png"
-          alt="moody coding setup"
-          width={1200}
-          height={800}
-          className="w-full object-cover rounded-xl shadow-xl border border-zinc-700 order-first md:order-none"
-          style={{ maxHeight: "400px" }}
-        />
-        <div className="space-y-4">
-          <h2 className="text-3xl font-bold text-amber-400">About</h2>
-          <p className="text-zinc-300">
-            I am a Navy veteran turned web dev based in Northeast Ohio. I build legit sites for local businesses that
-            want to stand out online. Everything I make is sharp, mobile-friendly, and just works.
-          </p>
-        </div>
-      </section>
-
       <section className="space-y-6 max-w-3xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-amber-400 drop-shadow">Services</h2>
         <p className="text-zinc-300">
@@ -132,6 +114,24 @@ export default function Home() {
             View all sample sites
           </Link>
         </p>
+      </section>
+
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center bg-zinc-900/40 rounded-xl p-8">
+        <Image
+          src="/images/building (2).png"
+          alt="moody coding setup"
+          width={1200}
+          height={800}
+          className="w-full object-cover rounded-xl shadow-xl border border-zinc-700 order-first md:order-none"
+          style={{ maxHeight: "400px" }}
+        />
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold text-amber-400">About</h2>
+          <p className="text-zinc-300">
+            I am a Navy veteran turned web dev based in Northeast Ohio. I build legit sites for local businesses that
+            want to stand out online. Everything I make is sharp, mobile-friendly, and just works.
+          </p>
+        </div>
       </section>
 
       <section className="max-w-xl mx-auto bg-zinc-900 rounded-xl p-8 text-center space-y-4 shadow-inner border border-zinc-700">
