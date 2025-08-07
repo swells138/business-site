@@ -1,10 +1,6 @@
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#1c1c1e] to-[#2f2f31] text-zinc-100 p-8 space-y-8 text-center">
-      <h1 className="text-4xl font-bold text-amber-400">Contact</h1>
-      <p className="text-zinc-300 max-w-2xl mx-auto">
-        Have a project in mind, need a quote, or just want to say hello? Fill out the form below or email us directly. We respond to all inquiries within 1 business day.
-      </p>
       <div className="bg-zinc-900 rounded-xl p-8 max-w-xl mx-auto shadow-inner border border-zinc-700 space-y-4 text-center">
         <h2 className="text-2xl font-bold text-amber-400">Send a Message</h2>
         <iframe
