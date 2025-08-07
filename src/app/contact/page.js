@@ -44,7 +44,7 @@ export default function ContactPage() {
       </p>
       <div className="bg-zinc-900 rounded-xl p-8 max-w-xl mx-auto shadow-inner border border-zinc-700 space-y-4 text-center">
         <h2 className="text-2xl font-bold text-amber-400">Send a Message</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form id="contact-form" onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
             name="name"
