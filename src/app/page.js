@@ -42,10 +42,10 @@ export default function Home() {
           From single-page sites for food trucks to multi-page websites for boutiques, contractors, and local shops—I build clean, fast, and mobile-friendly websites that make your business look professional.
         </p>
         <ul className="space-y-1 text-zinc-300">
-          <li>✅ Starter sites from $300</li>
-          <li>✅ Multi-page sites from $800</li>
-          <li>✅ Mobile-friendly + basic SEO</li>
-          <li>✅ Live in under 2 weeks</li>
+          <li>Starter sites from $300</li>
+          <li>Multi-page sites from $800</li>
+          <li>Mobile-friendly + basic SEO</li>
+          <li>Live in under 2 weeks</li>
         </ul>
         <Link
           href="/services"
