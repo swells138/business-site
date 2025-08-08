@@ -31,11 +31,6 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/#testimonials" className="hover:underline">
-                Testimonials
-              </Link>
-            </li>
-            <li>
               <Link href="/#contact" className="hover:underline">
                 Contact
               </Link>
@@ -46,18 +41,6 @@ export default function Footer() {
           <h4 className="font-semibold text-white mb-4">Contact</h4>
           <p className="text-sm">Sydney Wells<br />Northeast Ohio</p>
           <div className="flex space-x-4 mt-4">
-            <Link
-              href="https://twitter.com"
-              className="hover:scale-110 transition-transform"
-            >
-              <Image src="/globe.svg" alt="Twitter" width={24} height={24} />
-            </Link>
-            <Link
-              href="https://instagram.com"
-              className="hover:scale-110 transition-transform"
-            >
-              <Image src="/window.svg" alt="Instagram" width={24} height={24} />
-            </Link>
             <Link
               href="mailto:contact@example.com"
               className="hover:scale-110 transition-transform"

@@ -2,30 +2,11 @@
 // Template redesigned for sleek modern web agency
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { sampleSites } from "../data/sampleSites";
-
-const testimonials = [
-  {
-    name: "Alex J.",
-    quote: "Our new site launched fast and looks incredible.",
-    image: "/images/dogwash.png",
-  },
-  {
-    name: "Maria S.",
-    quote: "Professional and easy to work with from start to finish.",
-    image: "/images/Pop-up.png",
-  },
-  {
-    name: "Devon K.",
-    quote: "A high-end site that finally matches our brand.",
-    image: "/images/foodtruck.png",
-  },
-];
 
 export default function Home() {
   const previewSites = sampleSites.slice(0, 6);
-  const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -160,12 +141,13 @@ export default function Home() {
                   <h3 className="text-xl font-semibold mb-3">
                     {site.title}
                   </h3>
-                  <button
-                    onClick={() => setLightbox(site.image)}
+                  <Link
+                    href={site.href}
+                    target="_blank"
                     className="bg-amber-500 hover:bg-amber-600 text-white px-3 py-1 rounded"
                   >
                     View Project
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -234,36 +216,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section
-        id="testimonials"
-        className="reveal py-24 bg-zinc-50 dark:bg-zinc-900"
-      >
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-12">Testimonials</h2>
-          <div className="flex overflow-x-auto space-x-6 snap-x snap-mandatory pb-4">
-            {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="snap-center bg-white dark:bg-zinc-800 p-6 rounded-lg shadow min-w-[280px]"
-              >
-                <Image
-                  src={t.image}
-                  alt={t.name}
-                  width={64}
-                  height={64}
-                  className="w-16 h-16 rounded-full mx-auto mb-4 object-cover"
-                />
-                <p className="italic text-sm text-zinc-600 dark:text-zinc-300">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <p className="mt-4 font-semibold">{t.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section id="contact" className="reveal py-24">
         <div className="max-w-xl mx-auto px-6 text-center">
@@ -280,24 +232,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      {lightbox && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-          <button
-            className="absolute top-4 right-4 text-white text-3xl"
-            onClick={() => setLightbox(null)}
-          >
-            &times;
-          </button>
-          <Image
-            src={lightbox}
-            alt="Project image"
-            width={1200}
-            height={800}
-            className="max-h-[80vh] w-auto rounded-lg"
-          />
-        </div>
-      )}
 
       <p className="text-xs text-zinc-500 text-center py-8">
         Northeast Web Studio is a trade name of Sydney Wells, sole proprietor.
