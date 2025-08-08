@@ -11,57 +11,69 @@ export default function Home() {
   const services = [
     {
       name: "Starter Site",
-      price: "$300",
-      bestFor: "Best for new businesses, food trucks, or pop-up shops.",
+      price: "$300–$500",
+      bestFor:
+        "Best for small businesses, food trucks, or pop-up shops that need a simple online presence fast.",
       features: [
         "Up to 3 pages (Home, About, Contact)",
-        "Mobile-friendly design",
-        "Basic SEO setup (titles, descriptions)",
+        "Mobile-friendly responsive design",
+        "Basic SEO setup (page titles, meta descriptions)",
         "1 round of revisions",
-        "Free 30-day post-launch support",
+        "30 days post-launch support",
       ],
       cta: "Get Started",
     },
     {
       name: "Multi-Page Site",
-      price: "$800",
-      bestFor: "Best for growing businesses wanting more content.",
+      price: "$800–$1,000",
+      bestFor:
+        "Best for growing businesses that want more space for content, features, and a polished user experience.",
       features: [
-        "Up to 6 pages",
-        "Mobile-friendly, responsive design",
+        "Up to 6 pages (Home, About, Services, Portfolio, Blog, Contact)",
+        "Mobile-friendly responsive design",
         "Basic SEO setup + image optimization",
         "2 rounds of revisions",
-        "Free 45-day post-launch support",
+        "45 days post-launch support",
       ],
       cta: "Get Started",
     },
     {
-      name: "Add-Ons",
-      price: "Custom Pricing",
-      bestFor: "Extra features to enhance your site.",
+      name: "Hourly Work",
+      price: "$30/hour",
+      bestFor:
+        "Need changes to your existing site or want a unique feature added?",
       features: [
-        "Extra pages",
-        "Blog setup",
-        "E-commerce store setup",
-        "Copywriting help",
-        "Domain + hosting assistance",
+        "Site edits and updates",
+        "New page additions",
+        "Troubleshooting",
+        "Feature enhancements",
       ],
-      cta: "Request a Demo",
+      cta: "Request Help",
     },
     {
-      name: "Monthly Maintenance",
-      price: "$50/month",
+      name: "Maintenance Plans",
+      price: "Basic $40/mo · VIP $80/mo",
       bestFor:
-        "For clients who want me to host their site and make regular updates.",
+        "Keep your site running smoothly, secure, and up to date.",
       features: [
-        "Fast, secure hosting",
-        "Monthly content updates (text, images, small changes)",
-        "Ongoing SEO monitoring & adjustments",
+        "Hosting help & uptime monitoring",
+        "1 minor content update per week (Basic)",
+        "Priority support & regular updates (VIP)",
         "Security checks & backups",
-        "Priority email support",
       ],
       cta: "Get Started",
       highlight: true,
+    },
+    {
+      name: "Extras & Add-ons",
+      price: "Starting at $50",
+      bestFor: "Enhance your site with optional upgrades.",
+      features: [
+        "Domain + hosting setup",
+        "Simple logo design",
+        "Rush project delivery",
+      ],
+      cta: "Request a Quote",
     },
   ];
 
@@ -131,7 +143,7 @@ export default function Home() {
         className="reveal py-24 max-w-6xl mx-auto px-6 text-center"
       >
         <h2 className="text-4xl font-bold mb-12">Services</h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-left">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5 text-left">
           {services.map((service) => (
             <div
               key={service.name}
