@@ -38,19 +38,6 @@ export default function Home() {
       cta: "Get Started",
     },
     {
-      name: "Hourly Work",
-      price: "$30/hour",
-      bestFor:
-        "Need changes to your existing site or want a unique feature added?",
-      features: [
-        "Site edits and updates",
-        "New page additions",
-        "Troubleshooting",
-        "Feature enhancements",
-      ],
-      cta: "Request Help",
-    },
-    {
       name: "Maintenance Plans",
       price: "Basic $40/mo · VIP $80/mo",
       bestFor:
@@ -63,17 +50,6 @@ export default function Home() {
       ],
       cta: "Get Started",
       highlight: true,
-    },
-    {
-      name: "Extras & Add-ons",
-      price: "Starting at $50",
-      bestFor: "Enhance your site with optional upgrades.",
-      features: [
-        "Domain + hosting setup",
-        "Simple logo design",
-        "Rush project delivery",
-      ],
-      cta: "Request a Quote",
     },
   ];
 
@@ -143,7 +119,7 @@ export default function Home() {
         className="reveal py-24 max-w-6xl mx-auto px-6 text-center"
       >
         <h2 className="text-4xl font-bold mb-12">Services</h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5 text-left">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 text-left">
           {services.map((service) => (
             <div
               key={service.name}
