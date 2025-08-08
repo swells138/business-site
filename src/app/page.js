@@ -8,6 +8,63 @@ import { sampleSites } from "../data/sampleSites";
 export default function Home() {
   const previewSites = sampleSites.slice(0, 6);
 
+  const services = [
+    {
+      name: "Starter Site",
+      price: "$300",
+      bestFor: "Best for new businesses, food trucks, or pop-up shops.",
+      features: [
+        "Up to 3 pages (Home, About, Contact)",
+        "Mobile-friendly design",
+        "Basic SEO setup (titles, descriptions)",
+        "1 round of revisions",
+        "Free 30-day post-launch support",
+      ],
+      cta: "Get Started",
+    },
+    {
+      name: "Multi-Page Site",
+      price: "$800",
+      bestFor: "Best for growing businesses wanting more content.",
+      features: [
+        "Up to 6 pages",
+        "Mobile-friendly, responsive design",
+        "Basic SEO setup + image optimization",
+        "2 rounds of revisions",
+        "Free 45-day post-launch support",
+      ],
+      cta: "Get Started",
+    },
+    {
+      name: "Add-Ons",
+      price: "Custom Pricing",
+      bestFor: "Extra features to enhance your site.",
+      features: [
+        "Extra pages",
+        "Blog setup",
+        "E-commerce store setup",
+        "Copywriting help",
+        "Domain + hosting assistance",
+      ],
+      cta: "Request a Demo",
+    },
+    {
+      name: "Monthly Maintenance",
+      price: "$50/month",
+      bestFor:
+        "For clients who want me to host their site and make regular updates.",
+      features: [
+        "Fast, secure hosting",
+        "Monthly content updates (text, images, small changes)",
+        "Ongoing SEO monitoring & adjustments",
+        "Security checks & backups",
+        "Priority email support",
+      ],
+      cta: "Get Started",
+      highlight: true,
+    },
+  ];
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -74,46 +131,30 @@ export default function Home() {
         className="reveal py-24 max-w-6xl mx-auto px-6 text-center"
       >
         <h2 className="text-4xl font-bold mb-12">Services</h2>
-        <div className="grid md:grid-cols-3 gap-12">
-          <div className="bg-white dark:bg-zinc-800 p-8 rounded-xl shadow transition-transform hover:scale-105">
-            <Image
-              src="/window.svg"
-              alt="Starter sites"
-              width={40}
-              height={40}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold mb-2">Starter Sites</h3>
-            <p className="text-sm text-zinc-600 dark:text-zinc-300">
-              Starter sites from $300. Mobile-friendly and clean.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-zinc-800 p-8 rounded-xl shadow transition-transform hover:scale-105">
-            <Image
-              src="/globe.svg"
-              alt="Full websites"
-              width={40}
-              height={40}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold mb-2">Full Websites</h3>
-            <p className="text-sm text-zinc-600 dark:text-zinc-300">
-              Multi-page sites from $800 with basic SEO.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-zinc-800 p-8 rounded-xl shadow transition-transform hover:scale-105">
-            <Image
-              src="/file.svg"
-              alt="Fast turnaround"
-              width={40}
-              height={40}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold mb-2">Fast Turnaround</h3>
-            <p className="text-sm text-zinc-600 dark:text-zinc-300">
-              Live in under 2 weeks, domain and hosting handled.
-            </p>
-          </div>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-left">
+          {services.map((service) => (
+            <div
+              key={service.name}
+              className={`flex flex-col h-full rounded-xl p-8 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 bg-white dark:bg-zinc-800 ${service.highlight ? 'bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-400' : ''}`}
+            >
+              <h3 className="text-2xl font-semibold mb-1">{service.name}</h3>
+              <p className="text-3xl font-bold text-amber-500 mb-2">{service.price}</p>
+              <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-4">
+                {service.bestFor}
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-sm text-zinc-600 dark:text-zinc-300 flex-1">
+                {service.features.map((feat) => (
+                  <li key={feat}>{feat}</li>
+                ))}
+              </ul>
+              <Link
+                href="/#contact"
+                className="mt-6 inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold text-center py-2 px-4 rounded-md"
+              >
+                {service.cta}
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
 
