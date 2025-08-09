@@ -16,12 +16,12 @@ export default function ServiceCards() {
           >
             {service.tag && (
               <span className="absolute right-4 top-4 bg-amber-500 text-white text-xs font-medium px-2 py-1 rounded-full">
-                {service.tag}{/* Edit badge text in services data */}
+                {service.tag}
               </span>
             )}
             <h3 className="text-2xl font-semibold">{service.name}</h3>
             <p className="text-3xl font-semibold text-amber-500">
-              {service.price}{/* Edit price in services data */}
+              {service.price}
             </p>
             <p className="text-sm text-zinc-600 dark:text-zinc-300">
               {service.bestFor}
@@ -30,7 +30,7 @@ export default function ServiceCards() {
               <h4 className="font-semibold">Features</h4>
               <ul className="list-disc list-inside text-sm leading-tight space-y-1">
                 {service.features.slice(0, 5).map((feat) => (
-                  <li key={feat}>{feat}{/* Edit feature bullets in services data */}</li>
+                  <li key={feat}>{feat}</li>
                 ))}
               </ul>
             </div>
@@ -38,7 +38,7 @@ export default function ServiceCards() {
               <h4 className="font-semibold">Why choose this</h4>
               <ul className="list-disc list-inside text-sm leading-tight space-y-1">
                 {service.whyChoose.slice(0, 5).map((why) => (
-                  <li key={why}>{why}{/* Edit why-choose bullets in services data */}</li>
+                  <li key={why}>{why}</li>
                 ))}
               </ul>
             </div>
@@ -47,11 +47,14 @@ export default function ServiceCards() {
               aria-label={`${service.cta} – ${service.name}`}
               className="mt-auto w-full text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-4 rounded-md transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
             >
-              {service.cta}{/* Edit CTA text in services data */}
+              {service.cta}
             </Link>
           </div>
         ))}
       </div>
+      <p className="text-sm text-gray-500 dark:text-gray-400 mt-4 text-center max-w-2xl mx-auto">
+        All prices shown are estimates to help you understand the typical cost of a website based on your needs. Monthly maintenance is completely optional if you prefer to manage updates yourself.
+      </p>
     </section>
   );
 }
