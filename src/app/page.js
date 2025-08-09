@@ -82,30 +82,31 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-12">Portfolio</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {previewSites.map((site) => (
-              <div
+              <a
                 key={site.href}
-                className="relative group rounded-xl overflow-hidden shadow-lg"
+                href={site.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
               >
-                <Image
-                  src={site.image}
-                  alt={`${site.title} preview`}
-                  width={400}
-                  height={250}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-zinc-900/70 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity">
-                  <h3 className="text-xl font-semibold mb-3">
-                    {site.title}
-                  </h3>
-                  <Link
-                    href={site.href}
-                    target="_blank"
-                    className="bg-amber-500 hover:bg-amber-600 text-white px-3 py-1 rounded"
-                  >
-                    View Project
-                  </Link>
-                </div>
-              </div>
+                <article className="relative rounded-xl overflow-hidden shadow-lg transition-transform duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
+                  <Image
+                    src={site.image}
+                    alt={`${site.title} preview`}
+                    width={400}
+                    height={250}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-zinc-900/70 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-opacity">
+                    <h3 className="text-xl font-semibold mb-3">
+                      {site.title}
+                    </h3>
+                    <span className="bg-amber-500 group-hover:bg-amber-600 text-white px-3 py-1 rounded">
+                      View Project
+                    </span>
+                  </div>
+                </article>
+              </a>
             ))}
           </div>
         </div>
