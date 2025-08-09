@@ -4,54 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { sampleSites } from "../data/sampleSites";
+import ServiceCards from "./components/ServiceCards";
 
 export default function Home() {
   const previewSites = sampleSites.slice(0, 6);
 
-  const services = [
-    {
-      name: "Starter Site",
-      price: "$300–$500",
-      bestFor:
-        "Best for small businesses, food trucks, or pop-up shops that need a simple online presence fast.",
-      features: [
-        "Up to 3 pages (Home, About, Contact)",
-        "Mobile-friendly responsive design",
-        "Basic SEO setup (page titles, meta descriptions)",
-        "1 round of revisions",
-        "30 days post-launch support",
-      ],
-      cta: "Get Started",
-    },
-    {
-      name: "Multi-Page Site",
-      price: "$800–$1,000",
-      bestFor:
-        "Best for growing businesses that want more space for content, features, and a polished user experience.",
-      features: [
-        "Up to 6 pages (Home, About, Services, Portfolio, Blog, Contact)",
-        "Mobile-friendly responsive design",
-        "Basic SEO setup + image optimization",
-        "2 rounds of revisions",
-        "45 days post-launch support",
-      ],
-      cta: "Get Started",
-    },
-    {
-      name: "Maintenance Plans",
-      price: "Basic $40/mo · VIP $80/mo",
-      bestFor:
-        "Keep your site running smoothly, secure, and up to date.",
-      features: [
-        "Hosting help & uptime monitoring",
-        "1 minor content update per week (Basic)",
-        "Priority support & regular updates (VIP)",
-        "Security checks & backups",
-      ],
-      cta: "Get Started",
-      highlight: true,
-    },
-  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -114,37 +71,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section
-        id="services"
-        className="reveal py-24 max-w-6xl mx-auto px-6 text-center"
-      >
-        <h2 className="text-4xl font-bold mb-12">Services</h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 text-left">
-          {services.map((service) => (
-            <div
-              key={service.name}
-              className={`flex flex-col h-full rounded-xl p-8 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 bg-white dark:bg-zinc-800 ${service.highlight ? 'bg-amber-50 dark:bg-amber-900/20 border-2 border-amber-400' : ''}`}
-            >
-              <h3 className="text-2xl font-semibold mb-1">{service.name}</h3>
-              <p className="text-3xl font-bold text-amber-500 mb-2">{service.price}</p>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-4">
-                {service.bestFor}
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-sm text-zinc-600 dark:text-zinc-300 flex-1">
-                {service.features.map((feat) => (
-                  <li key={feat}>{feat}</li>
-                ))}
-              </ul>
-              <Link
-                href="/#contact"
-                className="mt-6 inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold text-center py-2 px-4 rounded-md"
-              >
-                {service.cta}
-              </Link>
-            </div>
-          ))}
-        </div>
-      </section>
+      <ServiceCards />
 
       {/* Portfolio Section */}
       <section
