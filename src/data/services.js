@@ -41,7 +41,7 @@ export const services = [
   },
   {
     name: 'Monthly Maintenance',
-    price: '$100-150/mo',
+    price: '$50-150/mo',
     bestFor: 'For clients who want hosting and regular updates without the hassle.',
     features: [
       'Fast, secure hosting',
