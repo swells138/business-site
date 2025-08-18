@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://neastwebstudio.com"),
+  metadataBase: new URL("https://northeastwebstudio.com"),
   title: {
     default: "Northeast Web Studio",
     template: "%s | Northeast Web Studio",
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: "Northeast Web Studio",
     description: "Northeast Ohio Web Studio - Crafting Beautiful Websites",
-    url: "https://neastwebstudio.com/",
+    url: "https://northeastwebstudio.com/",
     siteName: "Northeast Web Studio",
     images: [
       {
