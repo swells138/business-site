@@ -41,7 +41,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Northeast Web Studio",
     description: "Northeast Ohio Web Studio - Crafting Beautiful Websites",
-    images: ["/images/rustbelt.png"],
+    images: ["/images/building (1).png"],
   },
   robots: {
     index: true,
