@@ -1,5 +1,4 @@
 'use client';
-// Template redesigned for sleek modern web agency
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -26,60 +25,94 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="font-sans">
-      {/* Hero Section */}
+    <main className="font-sans bg-white text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50">
       <section
         id="hero"
-        className="h-screen grid md:grid-cols-2 bg-zinc-100 dark:bg-[#1c1c1e]"
+        className="grid min-h-[92vh] md:grid-cols-[1.05fr_0.95fr] bg-zinc-100 pt-20 dark:bg-zinc-950"
       >
-        <div className="flex flex-col justify-center px-8 space-y-6 reveal">
-          <h1 className="text-5xl md:text-6xl font-extrabold">
-            Northeast Web Studio
+        <div className="flex flex-col justify-center px-6 py-16 sm:px-10 lg:px-16 reveal">
+          <p className="mb-4 text-sm font-bold uppercase tracking-widest text-amber-600">
+            Northeast Ohio web design
+          </p>
+          <h1 className="max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
+            Get a professional small-business website live without dragging it out for months.
           </h1>
-          <p className="text-lg md:text-xl max-w-md">
-            Web design forged in the Rust Belt. Clean. Fast. Built to last.
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-300">
+            Northeast Web Studio builds clean, mobile-friendly websites for local shops, service businesses, makers, and first-time founders who need more trust, calls, bookings, and clicks.
           </p>
-          <p className="text-lg md:text-xl max-w-md">
-            Affordable, mobile-friendly websites for local businesses. Get
-            online fast—with a site that works as hard as you do.
-          </p>
-          <div className="space-x-4 pt-4">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/#services"
-              className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-md transition-colors"
+              href="/contact"
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-amber-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-amber-600"
             >
-              Our Services
+              Request a Free Website Plan
             </Link>
             <Link
-              href="/#contact"
-              className="border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white font-semibold py-3 px-6 rounded-md transition-colors"
+              href="/#portfolio"
+              className="inline-flex min-h-12 items-center justify-center rounded-md border border-zinc-300 px-6 py-3 font-semibold text-zinc-900 transition-colors hover:border-amber-500 hover:text-amber-600 dark:border-zinc-700 dark:text-zinc-100"
             >
-              Contact Us
+              See Example Sites
             </Link>
           </div>
+          <div className="mt-10 grid max-w-2xl grid-cols-3 gap-4 border-t border-zinc-300 pt-6 text-left dark:border-zinc-800">
+            <div>
+              <p className="text-2xl font-bold text-amber-600">1-2 wk</p>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">typical launch</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-amber-600">$300+</p>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">starter builds</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-amber-600">30 days</p>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">launch support</p>
+            </div>
+          </div>
         </div>
-        <div className="relative reveal">
+        <div className="relative min-h-[420px] reveal">
           <Image
             src="/images/building (1).png"
-            alt="Rust Belt theme"
+            alt="Downtown building representing Northeast Ohio small business"
             fill
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-amber-500/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-zinc-950/15 via-transparent to-amber-500/25" />
+          <div className="absolute bottom-6 left-6 right-6 rounded-md bg-white/90 p-5 shadow-xl backdrop-blur dark:bg-zinc-950/85">
+            <p className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">
+              Built for practical local businesses
+            </p>
+            <p className="mt-2 text-lg font-bold">
+              Clear services, fast pages, simple contact, and a site customers can trust from their phone.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      <section className="reveal border-y border-zinc-200 bg-white py-10 dark:border-zinc-800 dark:bg-zinc-900">
+        <div className="mx-auto grid max-w-6xl gap-6 px-6 text-sm font-semibold text-zinc-700 sm:grid-cols-3 dark:text-zinc-200">
+          <p>Mobile-first layouts that work on real customer screens</p>
+          <p>Simple pricing before the project starts</p>
+          <p>Copy, SEO basics, launch, and handoff handled with you</p>
+        </div>
+      </section>
+
       <ServiceCards />
 
-      {/* Portfolio Section */}
       <section
         id="portfolio"
         className="reveal py-24 bg-zinc-50 dark:bg-zinc-900"
       >
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-12">Portfolio</h2>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-amber-600">
+              Example work
+            </p>
+            <h2 className="text-4xl font-bold">Sites made for the kinds of customers you serve</h2>
+            <p className="mt-4 text-zinc-600 dark:text-zinc-300">
+              Use these as starting points, then we shape the words, pages, and look around your business.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {previewSites.map((site) => (
               <a
@@ -89,7 +122,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="group block"
               >
-                <article className="relative rounded-xl overflow-hidden shadow-lg transition-transform duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
+                <article className="relative overflow-hidden rounded-md shadow-lg transition-transform duration-200 group-hover:shadow-xl group-hover:-translate-y-1">
                   <Image
                     src={site.image}
                     alt={`${site.title} preview`}
@@ -112,80 +145,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Process Section */}
       <section id="process" className="reveal py-24">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-12">Our Process</h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="p-4">
-              <Image
-                src="/file.svg"
-                alt="Discover"
-                width={40}
-                height={40}
-                className="mx-auto mb-4"
-              />
-              <h3 className="font-semibold mb-2">1. Discover</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300">
-                We learn about your business and goals.
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <p className="mb-3 text-sm font-bold uppercase tracking-widest text-amber-600">
+                How launch works
+              </p>
+              <h2 className="text-4xl font-bold">A clear path from “we need a site” to “send people here.”</h2>
+              <p className="mt-5 text-zinc-600 dark:text-zinc-300">
+                You do not need a giant brand strategy project to look legitimate online. You need the right pages, clear calls to action, and a build that is easy to keep alive.
               </p>
             </div>
-            <div className="p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-              <Image
-                src="/window.svg"
-                alt="Design"
-                width={40}
-                height={40}
-                className="mx-auto mb-4"
-              />
-              <h3 className="font-semibold mb-2">2. Design</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300">
-                Craft a custom look that fits your brand.
-              </p>
-            </div>
-            <div className="p-4">
-              <Image
-                src="/globe.svg"
-                alt="Develop"
-                width={40}
-                height={40}
-                className="mx-auto mb-4"
-              />
-              <h3 className="font-semibold mb-2">3. Develop</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300">
-                Build a fast, responsive website.
-              </p>
-            </div>
-            <div className="p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-              <Image
-                src="/file.svg"
-                alt="Launch"
-                width={40}
-                height={40}
-                className="mx-auto mb-4"
-              />
-              <h3 className="font-semibold mb-2">4. Launch</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300">
-                Deploy and support your new site.
-              </p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {[
+                ["1", "Plan", "We map your offer, audience, pages, and the fastest route to a useful first launch."],
+                ["2", "Write & design", "We turn your services, photos, and story into a polished mobile-first experience."],
+                ["3", "Build & revise", "You review a working site, request changes, and approve the final version."],
+                ["4", "Launch & support", "We connect the domain, publish the site, and stay close for post-launch fixes."],
+              ].map(([step, title, text]) => (
+                <div key={step} className="rounded-md border border-zinc-200 bg-zinc-50 p-5 dark:border-zinc-800 dark:bg-zinc-900">
+                  <p className="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-amber-500 font-bold text-white">
+                    {step}
+                  </p>
+                  <h3 className="text-xl font-semibold">{title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-300">{text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="reveal py-24">
-        <div className="max-w-xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-6">Contact</h2>
-          <p className="text-lg mb-6">
-            Ready to see what we can build? Visit our contact page to request a
-            demo or reach out.
+      <section id="contact" className="reveal bg-zinc-950 py-24 text-white">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <p className="mb-3 text-sm font-bold uppercase tracking-widest text-amber-400">
+            Start here
+          </p>
+          <h2 className="text-4xl font-bold">Tell me what you do. I’ll send back a practical website plan.</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-zinc-300">
+            Share your business, timeline, and what you want customers to do next. You will get a straightforward recommendation for pages, package, and next steps.
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-md transition-colors"
+            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-md bg-amber-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-amber-600"
           >
-            Go to Contact Page
+            Request My Website Plan
           </Link>
         </div>
       </section>
@@ -196,4 +201,3 @@ export default function Home() {
     </main>
   );
 }
-

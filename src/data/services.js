@@ -2,7 +2,7 @@ export const services = [
   {
     name: 'Starter Site',
     price: '$300–$500',
-    bestFor: 'Best for new businesses, food trucks, or pop-up shops that need a simple online presence fast.',
+    bestFor: 'Best for new businesses, food trucks, pop-ups, and solo services that need a credible online home fast.',
     features: [
       'Up to 3 pages (Home, About, Contact)',
       'Mobile-friendly responsive design',
@@ -11,9 +11,9 @@ export const services = [
       'Free 30-day post-launch support',
     ],
     whyChoose: [
-      'Fastest turnaround (often ~1 week)',
-      'Lowest cost to get online',
-      'Perfect when you just need something up that looks professional',
+      'Fastest path to looking legitimate online',
+      'Keeps the budget focused on the pages customers need first',
+      'Perfect when you need a clean site before a launch, event, or busy season',
     ],
     cta: 'Get Started',
     tag: 'Budget-friendly',
@@ -21,7 +21,7 @@ export const services = [
   {
     name: 'Multi-Page Site',
     price: '$800–$1,000',
-    bestFor: 'Best for growing businesses that want more space for content, features, and a polished user experience.',
+    bestFor: 'Best for growing businesses that need service pages, proof, photos, FAQs, and a stronger path to inquiries.',
     features: [
       'Up to 6 pages (e.g., Home, About, Services, Portfolio, Blog, Contact)',
       'Mobile-friendly responsive design',
@@ -30,8 +30,8 @@ export const services = [
       'Free 45-day post-launch support',
     ],
     whyChoose: [
-      'More room to tell your story & show work',
-      'Extra revisions for a refined look',
+      'More room to explain services and turn visitors into leads',
+      'Extra revisions for a more polished customer experience',
       'Better performance with image optimization',
       'Flexible base for future features',
     ],
@@ -42,7 +42,7 @@ export const services = [
   {
     name: 'Monthly Maintenance',
     price: '$50-150/mo',
-    bestFor: 'For clients who want hosting and regular updates without the hassle.',
+    bestFor: 'For clients who want updates, hosting help, and light ongoing SEO support without managing the tech.',
     features: [
       'Fast, secure hosting',
       'Monthly content updates (text, images, small changes)',

@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Northeast Web Studio",
-  description: "Professional web design and development services for small businesses in Northeast Ohio.",
+  title: "Northeast Web Studio | Websites for Local Businesses",
+  description:
+    "Affordable, fast-launch websites for Northeast Ohio small businesses that need more calls, bookings, and trust online.",
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>

@@ -6,14 +6,14 @@ export default function Navbar() {
     { href: '/#services', label: 'Services' },
     { href: '/#portfolio', label: 'Portfolio' },
     { href: '/#process', label: 'Process' },
-    { href: '/#contact', label: 'Contact' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur bg-white/70 dark:bg-zinc-900/70 text-zinc-900 dark:text-zinc-100">
-      <div className="max-w-7xl mx-auto flex items-center px-6 py-4 font-sans">
-        <Link href="/" className="mr-8 font-bold text-xl nav-link">
-          NWS
+    <nav className="fixed top-0 left-0 w-full z-50 border-b border-zinc-200 bg-white/85 text-zinc-900 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/80 dark:text-zinc-100">
+      <div className="max-w-7xl mx-auto flex items-center px-4 py-3 font-sans sm:px-6">
+        <Link href="/" className="mr-6 font-bold text-lg sm:text-xl nav-link">
+          Northeast Web Studio
         </Link>
         <div className="hidden md:flex space-x-8">
           {links.map((link) => (
@@ -23,13 +23,12 @@ export default function Navbar() {
           ))}
         </div>
         <Link
-          href="/#contact"
-          className="ml-auto bg-amber-500 hover:bg-amber-600 text-white font-semibold px-4 py-2 rounded-md transition-colors nav-link"
+          href="/contact"
+          className="ml-auto inline-flex min-h-11 items-center rounded-md bg-amber-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-amber-600 sm:text-base"
         >
-          Request a Demo
+          Get a Plan
         </Link>
       </div>
     </nav>
   );
 }
-

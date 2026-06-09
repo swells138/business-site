@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,8 +7,8 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-bold text-white mb-4">Northeast Web Studio</h3>
           <p className="text-sm">
-            Web design agency crafting sleek, high-performance sites for growing
-            businesses.
+            Fast, affordable websites for local businesses that need more trust,
+            calls, bookings, and simple online momentum.
           </p>
         </div>
         <div>
@@ -31,7 +30,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/#contact" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 Contact
               </Link>
             </li>
@@ -40,17 +39,14 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-white mb-4">Contact</h4>
           <p className="text-sm">Sydney Wells<br />Northeast Ohio</p>
-          <div className="flex space-x-4 mt-4">
-            <Link
-              href="mailto:contact@example.com"
-              className="hover:scale-110 transition-transform"
-            >
-              <Image src="/file.svg" alt="Email" width={24} height={24} />
-            </Link>
-          </div>
+          <Link
+            href="mailto:sydneywells103@gmail.com"
+            className="mt-4 inline-block text-sm font-semibold text-amber-300 hover:underline"
+          >
+            sydneywells103@gmail.com
+          </Link>
         </div>
       </div>
     </footer>
   );
 }
-
