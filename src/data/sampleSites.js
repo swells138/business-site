@@ -2,37 +2,37 @@ export const sampleSites = [
   {
     title: 'Food Trucks',
     href: 'https://foodtruck-site.vercel.app',
-    snippet: 'A clean landing page design for a food truck.',
+    snippet: 'A booking-focused food truck demo with menu cards, location schedule, and catering CTA.',
     image: '/images/foodtruck.png',
   },
   {
     title: 'Pet Salon',
     href: 'https://dogwash-site.vercel.app/',
-    snippet: 'Modern portfolio layout showcasing projects.',
+    snippet: 'A service-business demo built around trust, grooming packages, and quick appointment paths.',
     image: '/images/dogwash.png',
   },
   {
     title: 'Pop-up Shop',
     href: 'https://popupshop-site.vercel.app/',
-    snippet: 'Modern portfolio layout showcasing projects.',
+    snippet: 'A polished pop-up retail demo with featured products, events, and customer contact flow.',
     image: '/images/Pop-up.png',
   },
   {
     title: 'Photography',
     href: 'https://photography-site-brown.vercel.app/',
-    snippet: 'Simple photography blog homepage with inviting typography.',
+    snippet: 'A visual-first photography demo for sessions, galleries, and inquiry generation.',
     image: '/images/Photography.png',
   },
   {
     title: 'Tattoo Shop',
     href: 'https://tattoo-site.vercel.app/',
-    snippet: 'Edgy multi-page layout for local tattoo artists.',
+    snippet: 'A tattoo studio demo with artist credibility, portfolio direction, and booking emphasis.',
     image: '/images/tattoo.png',
   },
   {
     title: 'Custom',
     href: 'https://oddjobs-site.vercel.app/',
-    snippet: 'Event landing page featuring a strong call to action.',
+    snippet: 'A flexible custom-services demo for unusual offers, events, and local lead capture.',
     image: '/images/oddjobs.png',
   },
 ];
